@@ -1,0 +1,9 @@
+author="AsP3X";
+OnLoadName = "Sandbox Training";
+OnLoadMission = "Zeus/Coop";
+
+#include "VVS\menu.h"
+class CfgFunctions
+{
+ #include "VVS\Functions.h"
+};
