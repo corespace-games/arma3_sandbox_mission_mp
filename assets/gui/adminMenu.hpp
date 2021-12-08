@@ -4,6 +4,6 @@ class adminMenu {
 
 	class controls {
 		
-	}
+	};
 
-}
+};
