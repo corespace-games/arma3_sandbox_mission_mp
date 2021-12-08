@@ -9,20 +9,20 @@ travel_heli engineOn true;
 // _trg_selakano = createTrigger ["EmptyDetector", getPos selakano_helipad];
 // _trg_selakano setTriggerStatements ["this", "hint 'test';"];
 
-_wp_selakano = TravelHeli addWaypoint [[20757,7242.43,30.9067], 0];
-_wp_selakano setWaypointType "MOVE";
-_wp_selakano setWaypointSpeed "FULL";
-_wp_selakano setWaypointStatements ["true", "travel_heli LAND 'LAND';"];
+_wp_pyrgos = TravelHeli addWaypoint [[16577.9,12730,35.0], 0];
+_wp_pyrgos setWaypointType "MOVE";
+_wp_pyrgos setWaypointSpeed "FULL";
+_wp_pyrgos setWaypointStatements ["true", "travel_heli LAND 'LAND';"];
 
 travel_heliD sideRadio "messageOne";
-travel_heliD sideChat "Start moving to Selackano";
+travel_heliD sideChat "Start moving to Pyrgos";
 
 waitUntil {!isEngineOn travel_heli};
 
 travel_heliD sideRadio "messageOne";
-travel_heliD sideChat "Arrived at Selackano";
+travel_heliD sideChat "Arrived at Pyrgos";
 deleteWaypoint [TravelHeli, 0];
 
-travel_heli addAction ["Travel: to Selakano", "travel\selakano.sqf", name player];
+travel_heli addAction ["Travel: to Pyrgos", "travel\pyrgos.sqf", name player];
 // _trg_selakano synchronizeWaypoint [_wp_selakano];
 // _trg_selakano synchronizeTrigger [_wp_selakano];

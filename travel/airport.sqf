@@ -1,5 +1,8 @@
 _travelHeli = travel_heli;
 
+_index = _this select 2;
+_travelHeli removeAction _index;
+
 travel_heliD enableAI "MOVE";
 travel_heli engineOn true;
 
@@ -19,5 +22,7 @@ waitUntil {!isEngineOn travel_heli};
 travel_heliD sideRadio "messageOne";
 travel_heliD sideChat "Arrived at Airport";
 deleteWaypoint [TravelHeli, 0];
+
+travel_heli addAction ["Travel: to Airport", "travel\airport.sqf", name player];
 // _trg_selakano synchronizeWaypoint [_wp_selakano];
 // _trg_selakano synchronizeTrigger [_wp_selakano];
