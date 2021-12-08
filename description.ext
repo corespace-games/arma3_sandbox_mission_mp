@@ -2,8 +2,13 @@ author="AsP3X";
 OnLoadName = "Sandbox Training";
 OnLoadMission = "Zeus/Coop";
 
-#include "VVS\menu.h"
-class CfgFunctions
-{
- #include "VVS\Functions.h"
-};
+#include <functions\cfgFunctions.hpp>
+
+#include <assets\gui\defines.hpp>
+#include <assets\gui\adminMenu.hpp>
+
+// #include "functions\VVS\menu.h"
+// class CfgFunctions
+// {
+//  #include "\VVS\Functions.h"
+// };
