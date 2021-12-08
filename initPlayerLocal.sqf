@@ -11,7 +11,7 @@ if (_isAdmin) then {
 		// hint format ["%1", _keyDD];
 		switch (_this select 1) do {
 			case 53: {
-				createDialog "adminMenu";
+				[player] spawn pAx_fnc_openMenu;
 			};
 		};
 		false
