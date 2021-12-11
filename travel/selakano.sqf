@@ -4,7 +4,7 @@ _index = _this select 2;
 _travelHeli removeAction _index;
 _lockedTravel = true;
 
-travel_heliD enableAI "MOVE";
+travel_heliD enableAI "ALL";
 travel_heli engineOn true;
 
 for "_i" from count waypoints TravelHeli - 1 to 0 step -1 do
@@ -21,9 +21,10 @@ _wp_selakano setWaypointSpeed "FULL";
 _wp_selakano setWaypointStatements ["true", "travel_heli LAND 'LAND'; travel_heliD sideChat 'Arrived at Selakano'; _lockedTravel = false;"];
 
 travel_heliD sideRadio "messageOne";
-travel_heliD sideChat "Start moving to Selackano";
+travel_heliD sideChat "Start moving to Selakano";
 
 waitUntil {!isEngineOn travel_heli};
+travel_heliD disableAI "ALL";
 
 travel_heliD sideRadio "messageOne";
 deleteWaypoint [TravelHeli, 0];
