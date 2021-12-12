@@ -26,6 +26,11 @@ travel_heliD sideChat "Start moving to Airport";
 waitUntil {!isEngineOn travel_heli};
 travel_heliD disableAI "ALL";
 
+travel_heliD sideRadio "Refueling...";
+sleep 5;
+_travelHeli setFuel 1;
+travel_heliD sideRadio "Refueling completed";
+
 travel_heliD sideRadio "messageOne";
 deleteWaypoint [TravelHeli, 0];
 
