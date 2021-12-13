@@ -11,4 +11,5 @@ OnLoadMission = "Zeus/Coop";
 class CfgFunctions
 {
  #include "VVS\Functions.h"
+ class medico {};
 };
