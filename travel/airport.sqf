@@ -12,9 +12,6 @@ for "_i" from count waypoints TravelHeli - 1 to 0 step -1 do
 	deleteWaypoint [TravelHeli, _i];
 };
 
-// _trg_selakano = createTrigger ["EmptyDetector", getPos selakano_helipad];
-// _trg_selakano setTriggerStatements ["this", "hint 'test';"];
-
 _wp_airport = TravelHeli addWaypoint [[14739.5,16809.3,30.5], 0];
 _wp_airport setWaypointType "MOVE";
 _wp_airport setWaypointSpeed "FULL";
